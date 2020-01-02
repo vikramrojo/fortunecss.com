@@ -21,20 +21,10 @@
   <title>Docs</title>
 </svelte:head>
 
-<section class="cols">
-  <article class="col2">
-    <ul>
-      <li class={segment === undefined ? 'bold' : ''}>
-        <a href="/docs">Introduction</a>
-      </li>
-      {#each posts as post, index}
-        <li class="post-item">
-          <a rel="prefetch" href="docs/{post.slug}">{post.title}</a>
-        </li>
-      {/each}
-    </ul>
-  </article>
-  <article>
-    <h2>Documentation</h2>
-  </article>
-</section>
+<ul>
+  {#each posts as post, index}
+    <li class="post-item">
+      <a rel="prefetch" href="docs/{post.slug}">{post.title}</a>
+    </li>
+  {/each}
+</ul>

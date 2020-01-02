@@ -22,21 +22,18 @@
 
 </style>
 
-`
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
-<section class="cols">
-  <article class="col">
-    <header>
-      <p>{post.printDate} ~ {post.printReadingTime}</p>
-      <h1>{post.title}</h1>
-    </header>
-    <div class="container">
-      <article class="content">
-        {@html post.html}
-      </article>
-      <Bio />
-    </div>
+
+<header>
+  <h1>{post.title}</h1>
+</header>
+<div class="container">
+  <article class="content">
+    {@html post.html}
   </article>
-</section>
+  <hr />
+  <small>{post.printDate} ~ {post.printReadingTime}</small>
+  <Bio />
+</div>

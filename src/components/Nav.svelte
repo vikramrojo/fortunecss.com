@@ -6,12 +6,17 @@
 
 </style>
 
-<nav class="nav cols">
-  <div class="col navLeft">
-    <a class={segment === undefined ? 'bold' : ''} href=".">home</a>
-    <a class={segment === 'about' ? 'bold' : ''} href="about">about</a>
-    <a rel="prefetch" class={segment === 'blog' ? 'bold' : ''} href="blog">
-      blog
-    </a>
-  </div>
-</nav>
+<aside class="col3 hide">
+  <ul>
+    <li>
+      A themeable CSS variables driven library that needs no preprocessor.
+    </li>
+    <li class="marT2">
+      <a href="https://github.com/atav1k/fortune" class="bold">Github</a>
+    </li>
+    <li>
+      Fortune by @
+      <a href="https://twitter.com/@atav1k">atav1k</a>
+    </li>
+  </ul>
+</aside>

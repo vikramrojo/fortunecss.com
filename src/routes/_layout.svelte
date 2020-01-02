@@ -1,5 +1,6 @@
 <script>
   import Header from "../components/Header.svelte";
+  import Nav from "../components/Nav.svelte";
 
   export let segment;
 </script>
@@ -8,19 +9,19 @@
 
 </style>
 
-<div class="viewHt100 flex flexCol flexBetween">
+<div class="viewHt100">
   <Header {segment} />
 
-  <main class="padY4">
-    <slot />
+  <main class="cols">
+    <Nav {segment} />
+    <article class="col">
+      <slot />
+    </article>
   </main>
 
   <footer class="wid100">
     <nav class="nav cols">
-      <div class="navLeft col">
-        <a href="https://github.com/atav1k/sapper-fortune-template">Github</a>
-        <a href="/">&copy; {new Date().getFullYear()}</a>
-      </div>
+      <div class="navLeft col">&copy; {new Date().getFullYear()}</div>
     </nav>
   </footer>
 </div>

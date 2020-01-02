@@ -1,9 +1,11 @@
 ---
-title: Components
+title: Documentation
 date: 2020-01-01
 ---
 
-## alert.css
+## Components
+
+### alert.css
 
 <div class="alert">.alert</div>
 <div class="alert bgSuccess">.alert .bgSuccess</div>
@@ -15,7 +17,7 @@ date: 2020-01-01
 <div class="alert bgIndigo">.alert .bgIndigo</div>
 ```
 
-## button.css
+### button.css
 
 <button>Default</button>
 <a class="button">Link Button</a>
@@ -31,7 +33,7 @@ date: 2020-01-01
 <button disabled>Outline</button>
 ```
 
-## chip.css
+### chip.css
 
 <p><div class="chip">Default</div>
 <a class="chip">Link</a>
@@ -42,7 +44,7 @@ date: 2020-01-01
 <a class="chip">Link</a>
 ```
 
-## dropdown.css
+### dropdown.css
 
 <ul class="dropdown marB2">
   <li class="small uppercase bold"><div>Title</div></li>
@@ -58,7 +60,7 @@ date: 2020-01-01
 </ul>
 ```
 
-## nav.css
+### nav.css
 
 <div class="nav marB2">
   <div class="navLeft">Left</div>
@@ -74,7 +76,7 @@ date: 2020-01-01
 </div>
 ```
 
-## tab.css
+### tab.css
 
 <div class="tab isSimple marB2">
   <a href="">Simple 1</a>
@@ -97,7 +99,7 @@ date: 2020-01-01
 </div>
 ```
 
-## table.css
+### table.css
 
 <table class="isBordered isHoverable">
 <tr>
@@ -131,7 +133,7 @@ date: 2020-01-01
 </table>
 ```
 
-## text.css
+### text.css
 
 <abbr>Abbr</abbr>
 
@@ -173,7 +175,7 @@ date: 2020-01-01
 <pre>Pre</pre>
 ```
 
-## tooltip.css
+### tooltip.css
 
 <div class="tooltip">Tooltip
   <div class="tooltipText">Longform tooltip text</div>

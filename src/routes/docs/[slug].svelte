@@ -2,7 +2,7 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].html
-    const res = await this.fetch(`blog/${params.slug}.json`);
+    const res = await this.fetch(`docs/${params.slug}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -31,13 +31,11 @@
     <header>
       <p>{post.printDate} ~ {post.printReadingTime}</p>
       <h1>{post.title}</h1>
-      <hr />
     </header>
     <div class="container">
       <article class="content">
         {@html post.html}
       </article>
-      <hr />
       <Bio />
     </div>
   </article>

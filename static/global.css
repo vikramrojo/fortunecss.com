@@ -1,3 +1,7 @@
 :root {
   --link-color: var(--indigo);
+  --code-padding-y: 0;
+  --code-padding-x: 0;
+  --code-font-size: 1rem;
+  --tooltip-min-width: 10rem;
 }
